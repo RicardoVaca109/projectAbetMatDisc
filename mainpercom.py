@@ -23,6 +23,16 @@ if eleccion == 1:
 
     if eleccion2 == 1:
         print("--------------------------------------------")
+        print("P(n)= n!")
+        print("Ingresa valor de n")
+        n = int(input("n: "))
+        respt = math.factorial(n)
+        print("Respuesta:", "P(", n, ") = ", respt)
+
+    elif eleccion2 == 2:
+        print("--------------------------------------------")
+        print("Reinicia el programa")
+        print("--------------------------------------------")
         print("P(n,r)=n!/(n-r)!")
         print("Ingresa valor de n y r")
         n = int(input("n: "))
@@ -31,17 +41,7 @@ if eleccion == 1:
         print("Respuesta:", "P(", n, ",", r, ") = ", respt)
         print("--------------------------------------------")
         print("Reinicia el programa")
-
-    elif eleccion2 == 2:
-        print("--------------------------------------------")
-        print("P(n)= n!")
-        print("Ingresa valor de n")
-        n = int(input("n: "))
-        respt = math.factorial(n)
-        print("Respuesta:", "P(", n, ") = ", respt)
-        print("--------------------------------------------")
-        print("Reinicia el programa")
-
+    
     else:
         print("--------------------------------------------")
         print("No elegiste una de las opciones corre de nuevo el programa")
