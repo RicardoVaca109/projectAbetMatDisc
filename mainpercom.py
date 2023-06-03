@@ -4,7 +4,7 @@ n = 0
 r = 0
 
 print("Combinaciones y Permutaciones: ")
-print("¿Que quieres hacer?")
+print("¿Qué quieres hacer?")
 print("Permutación Ingresa 1: ")
 print("Combinación Ingresa 2: ")
 print("--------------------------------------------")
@@ -15,7 +15,7 @@ eleccion = int(input())
 if eleccion == 1:
     print("--------------------------------------------")
     print("Elegiste Permutación")
-    print("Con Repeticion o Sin repeticion?")
+    print("Con Repetición o Sin repetición?")
     print("Con Repeticion Ingresa 1: ")
     print("Sin Repeticion Ingresa 2: ")
     print("--------------------------------------------")
@@ -23,16 +23,18 @@ if eleccion == 1:
 
     if eleccion2 == 1:
         print("--------------------------------------------")
+        print("Elegiste Permutación con Repeteción")
         print("P(n)= n!")
         print("Ingresa valor de n")
         n = int(input("n: "))
         respt = math.factorial(n)
         print("Respuesta:", "P(", n, ") = ", respt)
+        print("--------------------------------------------")
+        print("Reinicia el programa")
 
     elif eleccion2 == 2:
         print("--------------------------------------------")
-        print("Reinicia el programa")
-        print("--------------------------------------------")
+        print("Elegiste Permutación sin Repetición")
         print("P(n,r)=n!/(n-r)!")
         print("Ingresa valor de n y r")
         n = int(input("n: "))
@@ -57,6 +59,7 @@ elif eleccion == 2:
 
     if eleccion3 == 1:
         print("--------------------------------------------")
+        print("Elegiste Combinación con Repetición")
         print("C(n+r-1,r)=(n+r-1)!/r!*(n-1)!")
         print("Ingresa valor de n y r")
         n = int(input("n: "))
@@ -68,6 +71,7 @@ elif eleccion == 2:
 
     elif eleccion3 == 2:
         print("--------------------------------------------")
+        print("Elegiste Combinación sin Repetición")
         print("C(n,r)=n!/r!*(n-r)!")
         print("Ingresa valor de n y r")
         n = int(input("n: "))
